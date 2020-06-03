@@ -1,0 +1,453 @@
+/* universal */
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* resuable Components */
+
+.row
+{
+	max-width:1000px;
+	margin: 0 auto; 
+	
+}
+section
+{
+	padding: 80px 0;
+}
+
+.clearfix::after
+{
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+
+.box
+{
+	padding: 1%;
+}
+/* heading */
+
+h1,h2,h3
+{
+	
+	margin: 0;
+	font-weight: 300;
+
+}
+h1
+{
+	color: white;
+	word-spacing: 1px;
+	font-size: 200%;
+	letter-spacing: 4px;
+}
+
+h2
+{
+	color: black;
+	text-align: center;
+	font-size: 150%;
+	letter-spacing: 2px;
+
+}
+h3
+{
+	margin:20px 0; 
+}
+
+.row h2::after
+{
+	content: " ";
+	width: 100px;
+	border-bottom: 2px solid orange;
+	display: block;
+	margin:30px auto;
+	
+}
+
+/* paragraph */
+
+
+.long-copy
+{
+	width: 75%;
+	margin-left: 15%;
+	font-size: 100%;
+	line-height: 145%;
+	margin-bottom: 30px;
+}
+
+.box p
+
+{
+	font-size: 100%;
+	line-height: 115%;
+	letter-spacing: 2px;
+}
+
+/* paragraph */
+
+
+.icon-big
+{
+	font-size: 350%;
+	color: orange;
+	display: block;
+	
+}
+
+
+/* basic */
+
+body,html
+{
+	color:#555;
+	font-weight: 300;
+	font-size:20px;
+	font-family: 'lato','Arial',sans-serif;
+	font-weight: 300;
+
+}
+
+
+
+
+
+
+
+
+
+/* buttons */
+
+.btn:link,.btn:visited
+{
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 30px;
+	border:1px solid green;
+	border-radius: 200px;
+	margin-top: 20px;
+	font-size: 80%;
+	transition: background-color 0.2s, color; 
+}
+
+.btn-full:link,.btn-full:visited
+{
+	background: #e67e22;
+	color:white;
+	margin-right: 15px;
+
+}
+
+.btn-ghost:link,.btn-ghost:visited
+{
+	border:1px solid #e67e22;
+	color: #e67e22;
+}
+
+
+
+.btn-ghost:active,.btn-ghost:hover
+{
+	background-color: #e67e22;
+	color: white;
+}
+.btn-full:active,.btn-full:hover
+{
+	background-color: rgb(150, 126, 34);		
+}
+
+
+/* header */
+
+
+header
+{
+	background-image : linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(images/hero.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+.logo
+
+{
+	height: 100px;
+	float: left;
+	margin-top: 30px;
+	width: auto;
+}
+
+.main-nav
+{
+	list-style: none;
+	float: right;
+	margin-top: 55px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	padding: 10px 10px;
+	margin-right: 10px;
+}
+
+.main-nav li a:link,.main-nav li a:visited
+{
+	text-decoration: none;
+	color: white;
+	
+	padding: 5px 0;
+}
+
+.main-nav li a:hover
+{
+	border-bottom: 2px solid orange;
+}
+
+
+
+.hero-text-box
+{
+	width: 1140px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-40%,-40%);
+}
+
+/* Section Meals */
+
+.section-meals
+{
+	padding: 0;
+}
+
+
+.meals-showcase
+{
+	width: 100%;
+	margin: 0;
+	
+}
+
+.meals-showcase li
+{
+	width: 25%;
+	float: left;
+	display: block;
+}
+
+.meals-photo
+{
+	width: 100%;
+	margin: 0;
+	height: auto;
+	background: black;
+	overflow: hidden;
+
+
+}
+.meals-photo img
+{
+	width: 100%;
+	margin:0;
+	opacity: 0.7;
+	transition: transform 0.5s, opacity 0.5s;
+	transform: scale(1.15);
+}
+
+.meals-photo img:hover
+{
+	opacity: 1;
+	transform: scale(1.17);
+}
+
+
+
+/* How it Works! */
+
+.how-it-works
+{
+	background: #F4F4F4;
+}
+
+
+.steps-box
+{
+	margin-top: 50px;
+}
+
+.app-screen
+{
+	width: 40%;
+}
+.steps-box:first-child
+{
+	padding-right: 3%;
+	text-align: right;
+	margin-top: 30px;
+}
+
+.steps-box:last-child
+{
+	padding-left: 3%;
+	margin-top: 100px;
+
+}
+
+.work-steps
+{
+	margin-bottom: 30px; 
+}
+
+.work-steps div
+{
+	border : 2px solid orange;
+	color: orange;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	padding: 5px;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	text-align: center;
+	font-size:150%;
+}
+.work-steps:last-of-type {
+    margin-bottom: 100px;
+}
+
+.btn-small
+{
+	height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* Section Testimonials */
+
+.section-testimonials h2
+{
+	color: white;
+}
+
+.section-testimonials
+{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(images/back.jpg);
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
+
+}
+
+blockquote
+{
+	padding: 10%;
+	line-height: 145%;
+	font-size: 90%;
+	font-style: italic;
+	position: relative;
+	margin-top: 40px;
+
+}
+
+blockquote::before{
+	content: "\201C";
+	display: block;
+	font-size: 500%;
+	position: absolute;
+	top:  5px; 
+	left: 15px;
+	}
+
+cite
+{
+	display: block;
+	margin-top: 30px;
+}
+
+cite img
+{
+	height: 40px;
+	margin-right: 10px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+
+/* our branches */
+
+
+.box img
+{
+	width: 100%;
+}
+
+.city-features
+{
+	margin-top: 10px;
+}
+
+.icon-small
+{
+	color: orange;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+
+}
+
+
+.form
+{
+	width: 50%;	
+	margin: 0 auto;
+	
+}
+
+label
+{
+	color: red;
+}
+
+input[type='text']
+{
+	width: 100%;
+	color: black;
+	font-style: italic;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
